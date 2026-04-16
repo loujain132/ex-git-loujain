@@ -1,118 +1,117 @@
-🚀 Atelier Pratique 1 – Premiers pas avec Git & GitHub
+📝 Mon Premier Journal de Bord (Git & GitHub)
 
-<p align="center">
-  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="300">
-</p>🎯 Objectif
+📌 Objectif
 
-Apprendre les bases de Git et GitHub :
-✔️ Créer un dépôt
-✔️ Ajouter et sauvegarder des fichiers
-✔️ Comprendre les zones Git
+Ce projet a pour but de :
+
+- Découvrir Git et GitHub
+- Comprendre les 3 zones : Working Directory, Staging, Repository
+- Apprendre à versionner un projet avec VS Code
 
 ---
 
 ⚙️ Configuration initiale
 
-git config --global user.name "Prénom Nom"
-git config --global user.email votre-email@exemple.com
+Avant de commencer, configure ton identité Git :
 
-🔍 Vérification :
+git config --global user.name "Votre Nom"
+git config --global user.email "votre-email@example.com"
+
+Vérifier :
 
 git config --list
 
 ---
 
-📁 Étapes du projet
+📁 Étape 1 : Préparation
 
-1️⃣ Préparation
-
-📂 Créer un dossier : "ex-git-prenom"
-💻 Ouvrir avec VS Code
+1. Ouvrir VS Code
+2. Créer un dossier nommé : "ex-git-prenom"
+3. Ouvrir ce dossier dans VS Code
+4. Ouvrir le terminal intégré
 
 ---
 
-2️⃣ Initialiser Git
+🚀 Étape 2 : Initialiser le dépôt
 
 git init
 
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="250">
-</p>---
+👉 Cela crée un dépôt Git local
 
-3️⃣ Ajouter un fichier
+---
 
-Créer "journal.txt" :
+📄 Étape 3 : Création du fichier et Staging
+
+1. Créer un fichier : "journal.txt"
+2. Ajouter dedans :
 
 Aujourd'hui, j'apprends Git.
 
-Ajouter au staging :
+3. Ajouter le fichier au staging :
 
 git add journal.txt
 
+👉 Le fichier passe en Staged Changes
+
 ---
 
-4️⃣ Premier Commit
+💾 Étape 4 : Premier Commit
 
-git commit -m "Initial commit: création du journal"
+git commit -m "Initial commit : création du journal"
 
-<p align="center">
-  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="250">
-</p>---
+👉 Le fichier est maintenant enregistré dans l’historique
 
-5️⃣ Modifier et comparer
+---
 
-Modifier :
+✏️ Étape 5 : Modifier et comparer
+
+1. Modifier "journal.txt" :
 
 Git est génial avec VS Code !
 
-Comparer :
+2. Vérifier l’état :
+
+git status
+
+3. Voir les différences :
 
 git diff
 
----
-
-6️⃣ Annuler une erreur ❌
-
-git checkout -- journal.txt
-
-<p align="center">
-  <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" width="250">
-</p>---
-
-🔁 Résumé rapide
-
-Action| Commande
-Initialiser| "git init"
-Ajouter| "git add"
-Commit| "git commit"
-Vérifier| "git status"
-Comparer| "git diff"
-Annuler| "git checkout -- fichier"
+👉 Comparaison entre ancienne et nouvelle version
 
 ---
 
-🧠 Concepts clés
+🔙 Étape 6 : Annuler les modifications
 
-🟢 Working Directory → fichiers modifiés
-🟡 Staging Area → prêts à être commit
-🔵 Repository → historique
+Pour annuler les changements :
+
+git restore journal.txt
+
+👉 Le fichier revient à la version du dernier commit
 
 ---
 
-🎉 Résultat
+📊 Récapitulatif
 
-✔️ Tu sais utiliser Git
-✔️ Tu comprends les bases
-✔️ Tu es prêt pour GitHub 🚀
+Commande| Rôle
+"git init"| Initialiser un dépôt
+"git add"| Ajouter au staging
+"git commit"| Sauvegarder une version
+"git status"| Voir l’état des fichiers
+"git diff"| Voir les modifications
+"git restore"| Annuler les changements
 
-<p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="300">
-</p>---
+---
 
-⭐ Bonus
+📚 Conclusion
 
-👉 Prochaine étape : pousser vers GitHub
+Ce TP permet de comprendre les bases de Git :
 
-git remote add origin <lien-repo>
-git branch -M main
-git push -u origin main
+- Ajouter des fichiers
+- Sauvegarder des versions
+- Comparer et revenir en arrière
+
+---
+
+✨ Auteur : Loujain Dorrai
+📅 Date :16/03/ 2026
