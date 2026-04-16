@@ -1,1 +1,2 @@
 Aujourd'hui, j'apprends Git 
+git est genial avec VS Code
